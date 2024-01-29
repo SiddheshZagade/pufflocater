@@ -169,9 +169,22 @@ body {
     background-color: #ccc;
 }
 
+
+
 @media screen and (max-width: 600px) {
     .title,
-    .search-container,
+    .search-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%; /* Adjust the width as needed */
+        max-width: 400px; /* Set a maximum width if desired */
+        background-color: #454E53;
+        border-radius: 30px;
+        padding: 10px; /* Adjust padding as needed */
+        box-sizing: border-box; /* Include padding and border in width and height */
+    }
     .stores-list-container {
         width: 80%;
         left: 10%;
@@ -185,11 +198,13 @@ body {
         font-size: 30px;
     }
 
-    .search-container {
-        top: 120px;
-    }
+    
 
     .stores-list-container {
         top: 220px;
+        margin-top: 300px;
     }
 }
+
+
+
