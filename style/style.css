@@ -169,3 +169,27 @@ body {
     background-color: #ccc;
 }
 
+@media screen and (max-width: 600px) {
+    .title,
+    .search-container,
+    .stores-list-container {
+        width: 80%;
+        left: 10%;
+        right: 10%;
+        margin: 0;
+    }
+
+    .title {
+        margin-top: 20px;
+        top: 30px;
+        font-size: 30px;
+    }
+
+    .search-container {
+        top: 120px;
+    }
+
+    .stores-list-container {
+        top: 220px;
+    }
+}
